@@ -1,0 +1,43 @@
+.wrapper-card-best-seller {
+    width: 100%;
+    height: 150px;
+    overflow-x: hidden;
+}
+
+.img-card-best-seller {
+    width: 100%;
+
+}
+.client-list {
+    display: flex;
+    flex-wrap: nowrap;  /* Membuat semua item dalam satu baris */
+    overflow-x: auto;   /* Membuat scroll horizontal jika melebihi lebar */
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start; /* Membuat item berada di kiri */
+}
+
+.client-list li {
+    margin: 10px 15px;  /* Jarak antar item */
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;  /* Agar teks tidak terputus */
+}
+
+
+/* Menambahkan ruang di atas elemen dengan ID 'about' */
+#about {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
+/* Menambahkan ruang di atas elemen dengan ID 'about' */
+#services {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
+/* Menambahkan ruang di atas elemen dengan ID 'about' */
+#best-seller {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
+/* Menambahkan ruang di atas elemen dengan ID 'about' */
+#client {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar */
+}
