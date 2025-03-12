@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminAboutController;
+use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AdminUserController;
 use App\Http\Controllers\AdminBannerController;
 use App\Http\Controllers\AdminServiceController;
@@ -55,12 +56,8 @@ Route::get('/services', function () {
     return view("home.layouts.wrapper", $data);
 });
 
-Route::get('/login', function () {
-    $data = [
-        'content' => 'home/auth/login'
-    ];
-    return view("home.layouts.wrapper", $data);
-});
+Route::get('/login', [AdminAuthController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login/do', [AdminAuthController::class, 'doLogin']);
 // Route untuk mengupdate data user
 
 
@@ -71,7 +68,10 @@ Route::resource('/admin/user', AdminUserController::class);
 
 
 // ADMIN
-Route::prefix('/admin')->group(function () {
+Route::prefix('/admin')->middleware('auth')->group(function () {
+
+    Route::get('/logout', [AdminAuthController::class, 'logout']);
+
     Route::get('/dashboard', [AdminDashboardController::class, 'index']);
 
     Route::get('/about', [AdminAboutController::class, 'index']);

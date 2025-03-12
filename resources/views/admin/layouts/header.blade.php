@@ -11,7 +11,7 @@
     <ul class="navbar-nav ml-auto">
         <!-- Navbar Search -->
         <li class="nav-item">
-            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <a class="nav-link" href="/admin/logout">
                 <i class="fas fa-sign-out-alt"></i>
             </a>
         </li>

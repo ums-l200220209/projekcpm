@@ -33,8 +33,12 @@
                 </li>
             </ul>
 
-            <form class="d-flex" role="search">
-                <a href="/login" class="btn btn-primary"><i class="fas fa-user"></i> Login</a>
+            <form class="d-flex">
+                @auth
+                    <a href="/admin/dashboard" class="btn btn-primary"><i class="fas fa-user"></i> Dashboard</a>
+                @else
+                    <a href="/login" class="btn btn-primary"><i class="fas fa-user"></i> Login</a>
+                @endauth
             </form>
         </div>
     </div>
