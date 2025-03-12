@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminUserController;
 use App\Http\Controllers\AdminBannerController;
 use App\Http\Controllers\AdminServiceController;
 use App\Http\Controllers\AdminBestController;
+use App\Http\Controllers\AdminDashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -71,18 +72,11 @@ Route::resource('/admin/user', AdminUserController::class);
 
 // ADMIN
 Route::prefix('/admin')->group(function () {
-    Route::get('dashboard', function () {
-
-        $data = [
-            'content' => 'admin/dashboard/index'
-        ];
-
-        return view('admin.layouts.wrapper', $data);
-    });
+    Route::get('/dashboard', [AdminDashboardController::class, 'index']);
 
     Route::get('/about', [AdminAboutController::class, 'index']);
     Route::put('/about/update', [AdminAboutController::class, 'update']);
-    Route::resource('/posts/bestseller',AdminBestController::class);
+    Route::resource('/posts/bestseller', AdminBestController::class);
     Route::resource('/service', AdminServiceController::class);
     Route::resource('/banner', AdminBannerController::class);
     Route::resource('/user', AdminUserController::class);
