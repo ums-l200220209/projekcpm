@@ -43,7 +43,7 @@
                     <div class="col-md-7">
                         <div class="form-group">
                             <label for="">Body</label>
-                            <textarea type="text" name="body" class="form-control @error('body') is-invalid @enderror"
+                            <textarea type="text" id="summernote" name="body" class="form-control @error('body') is-invalid @enderror"
                                 placeholder="Body">{{ isset($bestseller) ? $bestseller->body : old('body') }}</textarea>
                             @error('body')
                                 <div class="invalid-feedback">

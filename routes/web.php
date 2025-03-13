@@ -7,6 +7,8 @@ use App\Http\Controllers\AdminBannerController;
 use App\Http\Controllers\AdminServiceController;
 use App\Http\Controllers\AdminBestController;
 use App\Http\Controllers\AdminDashboardController;
+use App\Http\Controllers\AdminClientController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,13 +22,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    //return view('home.index');
-    $data = [
-        'content' => 'home/home/index'
-    ];
-    return view("home.layouts.wrapper", $data);
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/about', function () {
     $data = [
@@ -80,4 +76,5 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::resource('/service', AdminServiceController::class);
     Route::resource('/banner', AdminBannerController::class);
     Route::resource('/user', AdminUserController::class);
+    Route::resource('/client', AdminClientController::class);
 });

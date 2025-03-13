@@ -33,7 +33,7 @@ class AdminBestController extends Controller
         $data = $request->validate([
             'title' => 'required',
             'body'     => 'required',
-            'cover'   => 'required|'
+            'cover'   => 'required'
         ]);
     
 
@@ -69,7 +69,7 @@ class AdminBestController extends Controller
         $data = $request->validate([
             'title' => 'required',
             'body'     => 'required',
-            'cover'   => 'required|'
+            'cover'   => ''
         ]);
     
 

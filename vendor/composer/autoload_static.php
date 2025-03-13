@@ -361,8 +361,8 @@ class ComposerStaticInitf740607961027a10712a1bf5c78808d6
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -539,11 +539,11 @@ class ComposerStaticInitf740607961027a10712a1bf5c78808d6
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AdminAboutController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminAboutController.php',
+        'App\\Http\\Controllers\\AdminAuthController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminAuthController.php',
         'App\\Http\\Controllers\\AdminBannerController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminBannerController.php',
-        'App\\Http\\Controllers\\AdminProduk1Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminProduk1Controller.php',
-        'App\\Http\\Controllers\\AdminProduk2Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminProduk2Controller.php',
-        'App\\Http\\Controllers\\AdminProduk3Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminProduk3Controller.php',
-        'App\\Http\\Controllers\\AdminProduk4Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminProduk4Controller.php',
+        'App\\Http\\Controllers\\AdminBestController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminBestController.php',
+        'App\\Http\\Controllers\\AdminClientController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminClientController.php',
+        'App\\Http\\Controllers\\AdminDashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminDashboardController.php',
         'App\\Http\\Controllers\\AdminServiceController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminServiceController.php',
         'App\\Http\\Controllers\\AdminUserController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminUserController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
@@ -559,6 +559,8 @@ class ComposerStaticInitf740607961027a10712a1bf5c78808d6
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\About' => __DIR__ . '/../..' . '/app/Models/About.php',
         'App\\Models\\Banner' => __DIR__ . '/../..' . '/app/Models/Banner.php',
+        'App\\Models\\BestSeller' => __DIR__ . '/../..' . '/app/Models/BestSeller.php',
+        'App\\Models\\Client' => __DIR__ . '/../..' . '/app/Models/Client.php',
         'App\\Models\\Service' => __DIR__ . '/../..' . '/app/Models/Service.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
