@@ -1,10 +1,9 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="../../index3.html" class="brand-link">
-                <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                    style="opacity: .8">
-                <span class="brand-text font-weight-light">CMP Admin</span>
+            <a href="/admin/dashboard" class="brand-link">
+                <img src="/img/CahayaMitraPratama.png" alt="AdminCMP Logo" style="width: 90px; height: 90px;">
+                {{-- <span class="brand-text font-weight-light">CMP Admin</span> --}}
             </a>
 
             <!-- Sidebar -->
@@ -28,11 +27,12 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="/admin/posts/bestseller" class="nav-link {{ Request::is('admin/best-seller') ? 'active' : '' }}">
+                            <a href="/admin/posts/bestseller"
+                                class="nav-link {{ Request::is('admin/best-seller') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-file"></i>
                                 <p>
                                     Best Seller
-                                    <i class="right fas fa-angle-left"></i>
+                                    {{-- <i class="right fas fa-angle-left"></i> --}}
                                 </p>
                             </a>
                             {{-- <ul class="nav nav-treeview">
@@ -62,6 +62,7 @@
                                 </li>
                             </ul> --}}
                         </li>
+
                         <li class="nav-item">
                             <a href="/admin/about/" class="nav-link {{ Request::is('admin/about') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-list"></i>
@@ -72,7 +73,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/admin/service" class="nav-link {{ Request::is('admin/service') ? 'active' : '' }}">
+                            <a href="/admin/service"
+                                class="nav-link {{ Request::is('admin/service') ? 'active' : '' }}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Layanan

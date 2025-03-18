@@ -31,9 +31,9 @@ class AdminBannerController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'headline' => 'required',
-            'desc'     => 'required',
-            'gambar'   => 'required|'
+            'headline' => 'nullable',  // Tidak required
+            'desc'     => 'nullable',  // Tidak required
+            'gambar'   => 'required'  // Tetap required untuk gambar
         ]);
         $data["urutan"] = 0;
 
@@ -67,8 +67,8 @@ class AdminBannerController extends Controller
     {
         $banner = Banner::findOrFail($id);
         $data = $request->validate([
-            'headline' => 'required',
-            'desc'     => 'required',
+            'headline' => 'nullable',  // Tidak required
+            'desc'     => 'nullable',  // Tidak required
         ]);
         $data["urutan"] = 0;
 

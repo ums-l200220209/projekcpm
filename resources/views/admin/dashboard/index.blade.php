@@ -15,7 +15,7 @@
         <div class="info-box-content">
             <span class="info-box-text">User</span>
             <span class="info-box-number">
-                10
+                {{ \App\Models\User::count() }} <!-- Menghitung jumlah user -->
                 <small>User</small>
             </span>
         </div>

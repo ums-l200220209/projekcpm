@@ -7,7 +7,8 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-expand-md navbar-light bg-light shadow sticky-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
+        {{-- <a class="navbar-brand" href="#">Logo</a> --}}
+        <img src="/img/CahayaMitraPratama.png" alt="AdminCMP Logo" style="width: 80px; height: 80px;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
