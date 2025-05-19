@@ -10,8 +10,6 @@
                         <form action="/admin/user" method="POST">
                 @endif
 
-
-
                 @csrf
                 <div class="form-group">
                     <label for="">Username</label>
@@ -37,10 +35,13 @@
 
                 <div class="form-group">
                     <label for="">Password</label>
-                    <input type="password" name="password"
-                        class="form-control
-                            @error('password') is-invalid @enderror"
-                        placeholder="Password">
+                    <div class="position-relative">
+                        <input type="password" id="password" name="password"
+                            class="form-control @error('password') is-invalid @enderror" placeholder="Password">
+                        <i id="eyeIcon1" class="fas fa-eye position-absolute"
+                            style="right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"
+                            onclick="togglePassword('password', 'eyeIcon1')"></i>
+                    </div>
                     @error('password')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -50,10 +51,13 @@
 
                 <div class="form-group">
                     <label for="">Konfirmasi Password</label>
-                    <input type="password" name="re_password"
-                        class="form-control
-                            @error('re_password') is-invalid @enderror"
-                        placeholder="Password">
+                    <div class="position-relative">
+                        <input type="password" id="re_password" name="re_password"
+                            class="form-control @error('re_password') is-invalid @enderror" placeholder="Password">
+                        <i id="eyeIcon2" class="fas fa-eye position-absolute"
+                            style="right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;"
+                            onclick="togglePassword('re_password', 'eyeIcon2')"></i>
+                    </div>
                     @error('re_password')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -68,3 +72,20 @@
         </div>
     </div>
 </div>
+
+<script>
+    function togglePassword(fieldId, iconId) {
+        let passwordField = document.getElementById(fieldId);
+        let eyeIcon = document.getElementById(iconId);
+
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            eyeIcon.classList.remove('fa-eye');
+            eyeIcon.classList.add('fa-eye-slash');
+        } else {
+            passwordField.type = 'password';
+            eyeIcon.classList.remove('fa-eye-slash');
+            eyeIcon.classList.add('fa-eye');
+        }
+    }
+</script>

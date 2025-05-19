@@ -7,7 +7,6 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-expand-md navbar-light bg-light shadow sticky-top">
     <div class="container">
-        {{-- <a class="navbar-brand" href="#">Logo</a> --}}
         <img src="/img/CahayaMitraPratama.png" alt="AdminCMP Logo" style="width: 80px; height: 80px;">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +33,7 @@
                 </li>
             </ul>
 
-            <form class="d-flex">
+            <form class="d-flex" role="search">
                 @auth
                     <a href="/admin/dashboard" class="btn btn-primary"><i class="fas fa-user"></i> Dashboard</a>
                 @else

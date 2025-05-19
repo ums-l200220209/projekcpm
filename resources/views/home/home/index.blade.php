@@ -50,8 +50,8 @@
             background-color: #555;
         }
     </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> --}}
 </head>
 
 
@@ -229,9 +229,21 @@
 
 <div class="container my-5">
     <div class="text-center">
-        <h4 class="text-center">Hubungi Kami</h4>
-        <p>Hubungi kontak di bawah untuk pembelian atau kerja sama lebih lanjut.</p>
-        <a href=""class="btn btn-primary px-5" target="blank"><i class="fas fa-phone"></i> Hubungi kami di
-            WhatsApp</a>
+        <h4 class="fw-bold">Hubungi Kami</h4>
+        <p class="text-muted">Hubungi kontak di bawah untuk pembelian atau kerja sama lebih lanjut.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <!-- Tombol WhatsApp -->
+            <a href="https://wa.me/6281389864885?text=Halo%20saya%20tertarik%20dengan%20produk%20Anda"
+                class="btn btn-success px-4 py-2 rounded-pill shadow-sm fw-semibold d-inline-flex align-items-center gap-2"
+                target="_blank">
+                <i class="fab fa-whatsapp fs-5"></i> WhatsApp
+            </a>
+
+            <!-- Tombol Email -->
+            <a href="mailto:cahayapratama45@gmail.com"
+                class="btn btn-primary px-4 py-2 rounded-pill shadow-sm fw-semibold d-inline-flex align-items-center gap-2">
+                <i class="fas fa-envelope fs-5"></i> Email
+            </a>
+        </div>
     </div>
 </div>

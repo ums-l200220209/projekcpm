@@ -19,10 +19,12 @@ class AdminAuthController extends Controller
 
     function doLogin(Request $request)
     {
-        // dd($request->all());
+        // Validasi input dengan minimum password 8 karakter
         $data = $request->validate([
-            'email' => 'required',
-            'password' => 'required'
+            'email' => 'required|email',
+            'password' => 'required|min:8' // Minimal 8 karakter
+        ], [
+            'password.min' => 'Password harus minimal 8 karakter.'
         ]);
 
         if (Auth::attempt($data)) {

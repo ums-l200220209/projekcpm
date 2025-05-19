@@ -5,9 +5,10 @@
                 <span>© 2025 CV.CAHAYA MITRA PRATAMA. All rights reserved.</span>
             </div>
             <div class="col-12 col-md-6 text-md-end">
-                <span class="d-block mb-2">Jl. Warna Jaya No.21, Warungbambu</span>
+                <span class="d-block mb-2">Jl. Warna Jaya No.21,Ruko No.5 Surotokunto Warungbambu</span>
                 <span class="d-block mb-2">Kecamatan Karawang Timur, Karawang, Jawa Barat 41371</span>
-                <span class="d-block">Telepon: +62 812 3456 7890</span>
+                <span class="d-block mb-2">(Samping POLRES Karawang)</span>
+                <span class="d-block">Telepon : 081389864885</span>
                 <span class="d-block">cahayapratama45@gmail.com</span>
             </div>
         </div>
